@@ -1,0 +1,7 @@
+D:\project\Aylanalar\Aylanalar\bin\Debug\Aylanalar.exe.config
+D:\project\Aylanalar\Aylanalar\bin\Debug\Aylanalar.exe
+D:\project\Aylanalar\Aylanalar\bin\Debug\Aylanalar.pdb
+D:\project\Aylanalar\Aylanalar\obj\Debug\Aylanalar.csproj.AssemblyReference.cache
+D:\project\Aylanalar\Aylanalar\obj\Debug\Aylanalar.csproj.CoreCompileInputs.cache
+D:\project\Aylanalar\Aylanalar\obj\Debug\Aylanalar.exe
+D:\project\Aylanalar\Aylanalar\obj\Debug\Aylanalar.pdb
