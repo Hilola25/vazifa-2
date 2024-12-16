@@ -19,7 +19,7 @@ namespace Aylanalar
             (8, 8, 2)   // 4-a Aylana
         };
 
-			// Uchta kesishuvchi aylana bormi?
+			// 1) Uchta kesishuvchi aylana bormi?
 			bool foundThreeIntersecting = false;
 
 			for (int i = 0; i < circles.Count; i++)
@@ -28,30 +28,70 @@ namespace Aylanalar
 				{
 					for (int k = j + 1; k < circles.Count; k++)
 					{
-						// Ikki aylananing kesishishini tekshirish
-						double d1 = Math.Sqrt(Math.Pow(circles[i].X - circles[j].X, 2) + Math.Pow(circles[i].Y - circles[j].Y, 2));
-						double d2 = Math.Sqrt(Math.Pow(circles[j].X - circles[k].X, 2) + Math.Pow(circles[j].Y - circles[k].Y, 2));
-						double d3 = Math.Sqrt(Math.Pow(circles[k].X - circles[i].X, 2) + Math.Pow(circles[k].Y - circles[i].Y, 2));
-
-						bool intersect1 = d1 <= circles[i].Radius + circles[j].Radius && d1 >= Math.Abs(circles[i].Radius - circles[j].Radius);
-						bool intersect2 = d2 <= circles[j].Radius + circles[k].Radius && d2 >= Math.Abs(circles[j].Radius - circles[k].Radius);
-						bool intersect3 = d3 <= circles[k].Radius + circles[i].Radius && d3 >= Math.Abs(circles[k].Radius - circles[i].Radius);
-
-						if (intersect1 && intersect2 && intersect3)
+						if (AreIntersecting(circles[i], circles[j]) &&
+							AreIntersecting(circles[j], circles[k]) &&
+							AreIntersecting(circles[k], circles[i]))
 						{
-							foundThreeIntersecting = true;
 							Console.WriteLine($"Uchta kesishuvchi aylana topildi: {i + 1}, {j + 1}, {k + 1}");
+							foundThreeIntersecting = true;
 						}
 					}
 				}
 			}
 
 			if (!foundThreeIntersecting)
-			{
 				Console.WriteLine("Uchta kesishuvchi aylana yo'q.");
+
+			// 2) Alohida turgan aylanalarni aniqlash
+			List<int> isolatedCircles = new List<int>();
+
+			for (int i = 0; i < circles.Count; i++)
+			{
+				bool isIsolated = true;
+
+				for (int j = 0; j < circles.Count; j++)
+				{
+					if (i == j) continue;
+
+					// Tekshirish: boshqa aylana bilan kesishish yoki ichida bo'lish
+					if (AreIntersecting(circles[i], circles[j]) || IsInside(circles[i], circles[j]))
+					{
+						isIsolated = false;
+						break;
+					}
+				}
+
+				if (isIsolated)
+					isolatedCircles.Add(i + 1);
+			}
+
+			if (isolatedCircles.Count > 0)
+			{
+				Console.WriteLine("Alohida turgan aylanalar:");
+				foreach (var index in isolatedCircles)
+					Console.WriteLine($"Aylana {index}");
+			}
+			else
+			{
+				Console.WriteLine("Alohida turgan aylana yo'q.");
 			}
 			Console.ReadKey();
 		}
-	}
 
+		// Ikki aylananing kesishishini tekshiradi
+		static bool AreIntersecting((double X, double Y, double Radius) a, (double X, double Y, double Radius) b)
+		{
+			double distance = Math.Sqrt(Math.Pow(a.X - b.X, 2) + Math.Pow(a.Y - b.Y, 2));
+			return distance <= a.Radius + b.Radius && distance >= Math.Abs(a.Radius - b.Radius);
+		}
+
+		// Bir aylana boshqa aylanani ichida joylashganligini tekshiradi
+		static bool IsInside((double X, double Y, double Radius) inner, (double X, double Y, double Radius) outer)
+		{
+			double distance = Math.Sqrt(Math.Pow(inner.X - outer.X, 2) + Math.Pow(inner.Y - outer.Y, 2));
+			return distance + inner.Radius <= outer.Radius;
+		}
+
+	}
 }
+

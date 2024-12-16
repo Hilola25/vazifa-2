@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\project\\Aylanalar\\",
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\git-hub\\vazifa-2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CC71AA01-2C9B-4C53-A9FB-C197E286032D}|Aylanalar\\Aylanalar.csproj|d:\\project\\aylanalar\\aylanalar\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC71AA01-2C9B-4C53-A9FB-C197E286032D}|Aylanalar\\Aylanalar.csproj|c:\\users\\user\\desktop\\git-hub\\vazifa-2\\aylanalar\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC71AA01-2C9B-4C53-A9FB-C197E286032D}|Aylanalar\\Aylanalar.csproj|solutionrelative:aylanalar\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\project\\Aylanalar\\Aylanalar\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\git-hub\\vazifa-2\\Aylanalar\\Program.cs",
               "RelativeDocumentMoniker": "Aylanalar\\Program.cs",
-              "ToolTip": "D:\\project\\Aylanalar\\Aylanalar\\Program.cs*",
+              "ToolTip": "C:\\Users\\User\\Desktop\\git-hub\\vazifa-2\\Aylanalar\\Program.cs*",
               "RelativeToolTip": "Aylanalar\\Program.cs*",
-              "ViewState": "AgIAACEAAAAAAAAAAAAEwDQAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAawE0AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-01T01:56:58.184Z",
               "EditorCaption": ""

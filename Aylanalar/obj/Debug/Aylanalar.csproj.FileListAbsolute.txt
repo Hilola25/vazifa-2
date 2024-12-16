@@ -5,3 +5,10 @@ D:\project\Aylanalar\Aylanalar\obj\Debug\Aylanalar.csproj.AssemblyReference.cach
 D:\project\Aylanalar\Aylanalar\obj\Debug\Aylanalar.csproj.CoreCompileInputs.cache
 D:\project\Aylanalar\Aylanalar\obj\Debug\Aylanalar.exe
 D:\project\Aylanalar\Aylanalar\obj\Debug\Aylanalar.pdb
+C:\Users\User\Desktop\git-hub\vazifa-2\Aylanalar\bin\Debug\Aylanalar.exe.config
+C:\Users\User\Desktop\git-hub\vazifa-2\Aylanalar\bin\Debug\Aylanalar.exe
+C:\Users\User\Desktop\git-hub\vazifa-2\Aylanalar\bin\Debug\Aylanalar.pdb
+C:\Users\User\Desktop\git-hub\vazifa-2\Aylanalar\obj\Debug\Aylanalar.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\git-hub\vazifa-2\Aylanalar\obj\Debug\Aylanalar.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\git-hub\vazifa-2\Aylanalar\obj\Debug\Aylanalar.exe
+C:\Users\User\Desktop\git-hub\vazifa-2\Aylanalar\obj\Debug\Aylanalar.pdb
